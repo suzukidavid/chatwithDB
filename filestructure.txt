@@ -1,0 +1,59 @@
+ycla_ai/
+│
+├── config/
+│   ├── settings/
+│   │   ├── __init__.py
+│   │   ├── common.py
+│   │   ├── development.py
+|   |   |── key_values.py  # Environment variables
+│   │   ├── local.py
+│   │   └── production.py
+│   │
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── celery.py         # Celery configuration
+│   ├── urls.py
+│   └── wsgi.py
+│
+├── chat_api/
+│   ├── migrations/
+│   │   └── __init__.py
+│   │
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── tasks.py          # Celery tasks for chat_api
+│   ├── tests.py
+│   ├── urls.py
+|   |── utils.py          # Utility functions for chat_api
+│   └── views.py
+│
+├── ycla_chat/
+│   ├── migrations/
+│   │   └── __init__.py
+│   │
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── tasks.py          # Celery tasks for ycla_chat
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+│
+├── templates/
+│   └── api_documentation.html
+│
+├── static/
+│   └── css/
+│       └── api_documentation.css
+│
+│
+├── .env
+├── .gitignore
+├── manage.py
+├── requirements.txt
+└── worker.py              # Celery worker entry point
